@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اه اه انا منزغب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .discord-gradient {
+            background: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 px-6 bg-slate-900/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center">
+                    <i class="fab fa-discord text-2xl text-white"></i>
+                </div>
+                <span class="text-xl font-black tracking-tight tracking-wider">اسم السيرفر</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold">
+                <a href="#home" class="hover:text-indigo-400 transition">الرئيسية</a>
+                <a href="#features" class="hover:text-indigo-400 transition">المميزات</a>
+                <a href="#rules" class="hover:text-indigo-400 transition">القوانين</a>
+                <a href="#about" class="hover:text-indigo-400 transition">عننا</a>
+            </div>
+            <a href="https://discord.gg/WVSnyyb4" class="discord-gradient px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform">
+                دخول السيرفر
+            </a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 px-6 min-h-screen flex items-center overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 relative z-10">
+            <div class="text-right">
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                    أفضل مجتمع <br>
+                    <span class="text-indigo-500">للالتقاء بالأصدقاء</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg">
+                    انضم إلينا الآن في أكبر سيرفر عربي يجمع اللاعبين والمبرمجين والمبدعين. بيئة آمنة، فعاليات يومية، وجوائز بانتظارك!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://discord.gg/YOUR_INVITE" class="discord-gradient px-10 py-4 rounded-2xl font-black text-xl hover:shadow-[0_0_30px_-5px_rgba(88,101,242,0.6)] transition-all">
+                        <i class="fab fa-discord ml-2"></i> انضم الآن
+                    </a>
+                    <a href="#features" class="bg-slate-800 px-10 py-4 rounded-2xl font-black text-xl border border-white/10 hover:bg-slate-700 transition-all">
+                        استكشف المزيد
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center animate-float">
+                <div class="relative w-64 h-64 md:w-96 md:h-96">
+                    <div class="absolute inset-0 bg-indigo-500 rounded-3xl rotate-6 blur-2xl opacity-20"></div>
+                    <!-- Placeholder for Server Logo -->
+                    <img src="https://placehold.co/400x400/5865F2/FFFFFF?text=SERVER+LOGO" alt="Server Logo" class="w-full h-full object-cover rounded-3xl border-4 border-indigo-500/30 relative z-10 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">ماذا نوفر لك؟</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-3xl group hover:-translate-y-2 transition-all">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gamepad text-3xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">مجتمع لاعبين</h3>
+                    <p class="text-slate-400">نظم بطولاتك، ابحث عن فريق، واستمتع بأفضل الألعاب مع أعضاء محترفين.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-3xl group hover:-translate-y-2 transition-all">
+                    <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">بوتات متطورة</h3>
+                    <p class="text-slate-400">أنظمة حماية متطورة، بوتات موسيقية، ونظام ليفلات (Levels) فريد من نوعه.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-3xl group hover:-translate-y-2 transition-all">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt text-3xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">إدارة احترافية</h3>
+                    <p class="text-slate-400">طاقم إشراف متواجد على مدار الساعة لضمان أفضل تجربة لجميع الأعضاء.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-card p-10 rounded-[3rem] border-indigo-500/20 shadow-2xl overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <i class="fas fa-gavel text-9xl"></i>
+                </div>
+                
+                <h2 class="text-4xl font-black mb-10 flex items-center gap-4">
+                    <i class="fas fa-scroll text-indigo-500"></i>
+                    قوانين السيرفر
+                </h2>
+                
+                <div class="space-y-6 relative z-10">
+                    <div class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center font-bold flex-shrink-0">1</span>
+                        <p class="text-lg">الاحترام المتبادل بين جميع الأعضاء والإدارة هو الأساس.</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center font-bold flex-shrink-0">2</span>
+                        <p class="text-lg">يمنع منعاً باتاً نشر الروابط الخارجية أو الإعلانات دون إذن.</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center font-bold flex-shrink-0">3</span>
+                        <p class="text-lg">الالتزام بمواضيع الرومات المخصصة وعدم التخريب (Spam).</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center font-bold flex-shrink-0">4</span>
+                        <p class="text-lg">يمنع النقاش في المواضيع السياسية أو الطائفية تماماً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="about" class="bg-slate-950 py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-right">
+                <div class="flex items-center gap-3 mb-4 justify-center md:justify-start">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-discord text-2xl text-white"></i>
+                    </div>
+                    <span class="text-3xl font-black">اسم السيرفر</span>
+                </div>
+                <p class="text-slate-500 max-w-sm text-center md:text-right">
+                    نحن نسعى لبناء أكبر وأفضل مجتمع عربي على ديسكورد. انضم إلينا وكن جزءاً من المستقبل.
+                </p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mt-16 text-center text-slate-600 text-sm">
+            &copy; 2024 جميع الحقوق محفوظة لـ اسم السيرفر. تم التصميم بحب ❤️
+        </div>
+    </footer>
+
+    <script>
+        // Smooth header shadow on scroll
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl', 'py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('shadow-2xl', 'py-2');
+                nav.classList.add('py-4');
+            }
+        };
+
+        // Scroll animation simulation (simple)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
